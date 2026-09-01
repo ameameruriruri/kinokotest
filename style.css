@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: 0.1em;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 15px 50px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+
+button:hover {
+    background: white;
+    color: #111;
+}
