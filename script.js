@@ -1,5 +1,5 @@
 const startButton = document.getElementById("startButton");
 
 startButton.addEventListener("click", () => {
-    alert("たけのこの里");
+    window.location.href = "search.html";
 });

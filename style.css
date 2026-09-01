@@ -52,3 +52,72 @@ button:hover {
     background: white;
     color: #111;
 }
+
+
+input {
+    width: 300px;
+    padding: 15px;
+
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#searchButton {
+    margin-top: 20px;
+}
+
+.search-area {
+    position: relative;
+    width: 300px;
+}
+
+#suggestions {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#suggestions button {
+    display: block;
+
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+
+    background: #222;
+    color: white;
+
+    border: 1px solid #555;
+
+    text-align: left;
+    cursor: pointer;
+
+    letter-spacing: normal;
+}
+
+#suggestions button:hover {
+    background: #333;
+}
+
+#result {
+    width: 500px;
+    max-width: 90vw;
+
+    margin-top: 50px;
+    padding: 25px;
+
+    border-top: 1px solid #555;
+}
+
+#result h2 {
+    margin-top: 0;
+}

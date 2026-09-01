@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <p class="subtitle">SEARCH SYSTEM</p>
+
+        <h1>SEARCH</h1>
+
+        <p class="description">
+            キーワードを入力してください。
+        </p>
+
+        <div class="search-area">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="キーワードを入力"
+                autocomplete="off"
+            >
+
+            <div id="suggestions"></div>
+
+        </div>
+
+        <div id="result"></div>
+
+    </main>
+
+    <script src="search.js"></script>
+
+</body>
+</html>
