@@ -34,6 +34,11 @@ h1 {
     margin-bottom: 40px;
 }
 
+
+/* ================================
+   ボタン
+================================ */
+
 button {
     padding: 15px 50px;
 
@@ -53,6 +58,10 @@ button:hover {
     color: #111;
 }
 
+
+/* ================================
+   検索ボックス
+================================ */
 
 input {
     width: 300px;
@@ -76,10 +85,20 @@ input::placeholder {
     margin-top: 20px;
 }
 
+
+/* ================================
+   検索エリア
+================================ */
+
 .search-area {
     position: relative;
     width: 300px;
 }
+
+
+/* ================================
+   検索候補
+================================ */
 
 #suggestions {
     width: 100%;
@@ -108,6 +127,11 @@ input::placeholder {
     background: #333;
 }
 
+
+/* ================================
+   検索結果
+================================ */
+
 #result {
     width: 500px;
     max-width: 90vw;
@@ -120,4 +144,69 @@ input::placeholder {
 
 #result h2 {
     margin-top: 0;
+}
+
+
+/* キーワードとカテゴリを横並びにする */
+
+.result-title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.result-title h2 {
+    margin: 0;
+}
+
+.result-category {
+    font-size: 0.85em;
+    opacity: 0.6;
+}
+/* ================================
+   検索履歴
+================================ */
+
+#searchHistory {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 180px;
+    text-align: left;
+
+    max-height: 80vh;
+    overflow-y: auto;
+
+    /* スクロールバーを隠す */
+    scrollbar-width: none;
+}
+
+#searchHistory::-webkit-scrollbar {
+    display: none;
+}
+
+.history-title {
+    margin: 0 0 15px 0;
+
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    opacity: 0.6;
+}
+
+.history-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.history-item:hover {
+    opacity: 0.6;
+}
+
+.history-item small {
+    margin-left: 5px;
+
+    font-size: 0.75em;
+    opacity: 0.5;
 }
